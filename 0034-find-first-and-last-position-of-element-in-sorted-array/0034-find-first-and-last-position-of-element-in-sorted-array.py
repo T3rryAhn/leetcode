@@ -10,7 +10,7 @@ class Solution:
             else:
                 return [-1, -1]
 
-        while left < right:
+        while left <= right:
             if nums[left] == target:
                 answer[0] = left
                 break
