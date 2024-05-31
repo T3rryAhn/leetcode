@@ -4,7 +4,7 @@ class Solution:
         right = len(nums) - 1
         answer = [-1, -1]
 
-        if len(nums) <= 1:
+        if len(nums) < 1:
             if target in nums:
                 return [0, 0]
             else:
