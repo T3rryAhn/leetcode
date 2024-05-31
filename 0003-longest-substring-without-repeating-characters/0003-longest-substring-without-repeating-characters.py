@@ -10,4 +10,5 @@ class Solution:
                 selections.pop(0)
             selections.append(c)
         length = max(length, len(selections))
+        print(selections)
         return length
