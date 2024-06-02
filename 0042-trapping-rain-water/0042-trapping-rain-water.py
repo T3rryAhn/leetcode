@@ -3,8 +3,6 @@ class Solution:
         stack = []
         max_h = 0
         answer = 0
-
-        # first loop: left to right calculate water (shape like bucket)
         for h in height:
             if max_h > h:
                 stack.append(h)
@@ -13,7 +11,6 @@ class Solution:
                     answer += max_h - stack.pop()
                 max_h = h
 
-        # second loop: right to left calculate water (shape like stair going down)
         max_h = 0
         while stack:
             pop = stack.pop()
