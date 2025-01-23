@@ -3,8 +3,9 @@ class Solution:
         k = 0
 
         for i in range(len(nums)):
-            if nums[i] == val:
+            n = nums.pop(0)
+            if n == val:
                 k += 1
-
-        return k
+            else:
+                nums.append(n)
 
